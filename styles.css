@@ -1,0 +1,162 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 62, 84);
+}
+
+.form-box{
+position: relative;
+width: 350px;
+height: 490px;
+background-color: transparent(177, 222, 244);
+border: 1.5px solid rgb(236, 241, 245);
+border-radius: 20px;
+backdrop-filter: blur(5px);
+box-shadow:  0 0  30px rgb(183, 177, 177);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h2{
+    text-align: center;
+    color: aliceblue;
+    text-shadow:1px 5px 20px rgb(240, 236, 231);
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1.5px solid rgb(171, 192, 229);
+  margin: 20px 0;
+}
+
+.input-box label{
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(216, 242, 247);
+    text-shadow:1px 5px 20px rgb(251, 249, 247);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    bottom: 15px;
+}
+
+
+.input-box  input{
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(214, 227, 242);
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right:8px;
+    font-size: 1.2em;
+    color: rgb(134, 169, 209);
+    line-height: 57px;
+
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: rgb(214, 227, 242);
+    font-weight: 500;
+    margin: 15px 10px 15px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input{
+    accent-color: rgb(26, 78, 133);
+    margin-right: 9px;
+}
+
+.remember-forgot input{
+    margin-top: 9px;
+}
+
+.remember-forgot a {
+    color: rgb(214, 227, 242);
+    text-decoration: none;
+    margin-top: 9px;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+    color: rgb(147, 175, 185);
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    background-color:rgb(54, 67, 80);
+    border: .5px solid rgb(122, 138, 158);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(214, 227, 242);
+    font-weight: 600;
+    margin-top: 20px;
+}
+button:hover{
+    color:black;
+    background-color: rgb(90, 133, 169);
+    box-shadow: 0px 0px 80px rgb(239, 240, 241) ;
+}
+
+.login-register{
+    font-size: .9em ;
+  color:rgb(250, 253, 254);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color:rgb(250, 253, 254);
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.login-register p a:hover {
+text-decoration:underline;
+color: rgb(147, 175, 185);
+
+}
+
+.error{
+    color: rgb(91, 171, 189);
+    font-size:16px;
+    margin-top:-20px;
+}
+.input-box.success input{
+    border-color: green;
+}
+
+.input-box.error input{
+    border-color: red;
+}
+
